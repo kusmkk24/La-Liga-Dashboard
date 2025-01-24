@@ -5,7 +5,7 @@ import plotly.express as px
 
 st.set_page_config(layout="wide")
 
-#database_path = '/Users/karol/Downloads/LaLiga Dashboard/Team and Goalie Database'
+
 db = sqlite3.connect("Team and Goalie Database")
 # Connect to the SQLite database
 #connection = sqlite3.connect(database_path)
@@ -17,23 +17,6 @@ with col2:
     st.header('Team and Goalie Stats')
     st.write('An overview of the stats for the 2023-2024 season')
     st.write('By Will Adams, Andrew Cyhaniuk, Karol Kusmierczuk, & William Smith')
-
-
-
-#st.subheader('Top LaLiga Players')
-#tab1, tab2, tab3, tab4 = st.tabs(["Modric", "Lewandowski", "Griezmann", "Bellingham"])
-#with tab1:
-#    
-#   
-#with tab2:
-#    
-#with tab3:
-#    st.header("Antoine Griezmann")
-#    st.image("Antoine_Griezmann.jpg", width=200)
-#with tab4:
-#    st.header("Jude Bellingham")
-#    st.image("Jude_Bellingham.jpg", width=200)
-
 
 #Question per tab
 tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8 = st.tabs(["Attacking Third", "Attacking Efficiency", "Corners", "Passing v Big Opportunities",
